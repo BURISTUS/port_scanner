@@ -1,0 +1,15 @@
+[package]
+name = "port_scanner"
+version = "0.1.0"
+edition = "2021"
+author = ["Renat Klindzhev <klindzhevr7@gmail.com>"]
+
+[lib]
+name = "port_scanner"
+path = "src/port_scan/lib.rs"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+anyhow = "1"
+futures = "0.3.18"
+clap = "2.34.0"
